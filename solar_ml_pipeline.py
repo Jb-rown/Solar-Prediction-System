@@ -29,7 +29,7 @@ class SolarEnergyMLPipeline:
         """Load solar power data from CSV or generate synthetic data"""
         if file_path:
             # Load from Kaggle dataset
-            df = pd.read_csv(file_path)
+            df = pd.read_csv("Plant_1_Generation_Data.csv")
         else:
             # Generate synthetic data for demonstration
             df = self._generate_synthetic_data()
